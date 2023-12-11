@@ -43,13 +43,7 @@ public class SailplaneController : MonoBehaviour
         //Set rotational values from our axis inputs
         _roll = Input.GetAxis("Roll");
         _pitch = Input.GetAxis("Pitch");
-        _yaw = Input.GetAxis("Yaw");      
-    }
-
-    private void Update()
-    {
-        HandleInputs();
-        UpdateHUD();
+        _yaw = Input.GetAxis("Yaw");
 
         if (Vector3.Dot(_planeTransform.forward, Vector3.up) > 0.001f)
         {
@@ -59,10 +53,16 @@ public class SailplaneController : MonoBehaviour
         {
             _throttle += throttleIncrement;
         }
-        
+
         _throttle = Mathf.Clamp(_throttle, 0f, 100f);
     }
 
+    private void Update()
+    {
+        HandleInputs();
+        UpdateHUD();
+    }
+    
     private void FixedUpdate()
     {
         //Apply forces to our plane
@@ -72,6 +72,25 @@ public class SailplaneController : MonoBehaviour
         rb.AddTorque(-transform.forward * _roll * _responseModifier);
 
         rb.AddForce(Vector3.up * rb.velocity.magnitude * lift);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Updraft")) 
+        {
+            Debug.Log("updraft enter");
+            lift = 200f;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Updraft"))
+        {
+            Debug.Log("updraft exit");
+            lift = 75f;
+        }
+
     }
 
     private void UpdateHUD()
