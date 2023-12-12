@@ -45,7 +45,7 @@ public class SailplaneController : MonoBehaviour
         _pitch = Input.GetAxis("Pitch");
         _yaw = Input.GetAxis("Yaw");
 
-        if (Vector3.Dot(_planeTransform.forward, Vector3.up) > 0.001f)
+        if (Vector3.Dot(_planeTransform.forward, Vector3.up) > 0.05f)
         {
             _throttle -= throttleIncrement;
         }

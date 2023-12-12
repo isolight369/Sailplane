@@ -1665,11 +1665,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6093592463355912122, guid: 303ba2d2d16905840914e0c497bba200,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ccd5d54fdf497ce49b41855d78cbff72, type: 2}
+    - target: {fileID: -4683669308469848369, guid: 303ba2d2d16905840914e0c497bba200,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ccd5d54fdf497ce49b41855d78cbff72, type: 2}
+    - target: {fileID: -1806680513116206669, guid: 303ba2d2d16905840914e0c497bba200,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ccd5d54fdf497ce49b41855d78cbff72, type: 2}
+    - target: {fileID: -1461304994638716399, guid: 303ba2d2d16905840914e0c497bba200,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bbaa7610809aaf247813279207fda4c8, type: 2}
+    - target: {fileID: -804731622281664130, guid: 303ba2d2d16905840914e0c497bba200,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ccd5d54fdf497ce49b41855d78cbff72, type: 2}
+    - target: {fileID: -678588488315902003, guid: 303ba2d2d16905840914e0c497bba200,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ccd5d54fdf497ce49b41855d78cbff72, type: 2}
     - target: {fileID: 919132149155446097, guid: 303ba2d2d16905840914e0c497bba200,
         type: 3}
       propertyPath: m_Name
       value: sailplane2
       objectReference: {fileID: 0}
+    - target: {fileID: 6745302439343835087, guid: 303ba2d2d16905840914e0c497bba200,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ccd5d54fdf497ce49b41855d78cbff72, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
