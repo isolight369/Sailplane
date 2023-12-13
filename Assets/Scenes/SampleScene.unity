@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5ae792e96863764881d86f26310e349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throttleIncrement: 0.1
+  throttleIncrement: 0.01
   maxThrust: 200
   responsiveness: 3
   lift: 75
